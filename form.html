@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario memorial</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <style>
+
+        .estrelas {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .estrelas label {
+            display: inline-block;
+            margin-right: 70px;
+            margin-left: 10px;
+            margin-top: 10px;
+            
+        }
+
+        .estrelas input[type=radio] {
+            display: none;
+        }
+
+        .estrelas label i.fa:before {
+            content: '\f005';
+            color: #FC0;
+            font-size: 25px; /* aumenta o tamanho das estrelas */
+        }
+
+        .estrelas input[type=radio]:checked ~ label i.fa:before {
+            color: #CCC;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Formulario de Satisfação</div>
+        <form>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nome Completo</span>
+                    <input type="text" placeholder="Digite seu nome" name="Nome" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Telefone</span>
+                    <input type="tel" placeholder="" name="Telefone" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">E-mail</span>
+                    <input type="text" placeholder="Digite seu e-mail" name="Email" required>
+                </div>
+            </div>
+            <!-- <div class="aval-details">
+                <input type="checkbox" name="aval" id="dot-1">
+                <input type="checkbox" name="aval" id="dot-2">
+                <input type="checkbox" name="aval" id="dot-3">
+                <input type="checkbox" name="aval" id="dot-4">
+                <input type="checkbox" name="aval" id="dot-5">
+                <span class="aval-title">De 0 a 5, como você classifica o ambiente?</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="aval">1</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="aval">2</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot tree"></span>
+                        <span class="aval">3</span>
+                    </label>
+                    <label for="dot-4">
+                        <span class="dot four"></span>
+                        <span class="aval">4</span>
+                    </label>
+                    <label for="dot-5">
+                        <span class="dot five"></span>
+                        <span class="aval">5</span>
+                    </label>
+                </div>
+            </div> -->
+
+
+
+
+            <!-- <div class="aval-details">
+                <input type="checkbox" name="aval" id="dot-6">
+                <input type="checkbox" name="aval" id="dot-7">
+                <input type="checkbox" name="aval" id="dot-8">
+                <input type="checkbox" name="aval" id="dot-9">
+                <input type="checkbox" name="aval" id="dot-10">
+                <span class="aval-title">De 0 a 5, como você classifica a qualidade do nosso atendimento?</span>
+                <div class="category">
+                    <label for="dot-6">
+                        <span class="dot six"></span>
+                        <span class="aval">1</span>
+                    </label>
+                    <label for="dot-7">
+                        <span class="dot seven"></span>
+                        <span class="aval">2</span>
+                    </label>
+                    <label for="dot-8">
+                        <span class="dot eight"></span>
+                        <span class="aval">3</span>
+                    </label>
+                    <label for="dot-9">
+                        <span class="dot nine"></span>
+                        <span class="aval">4</span>
+                    </label>
+                    <label for="dot-10">
+                        <span class="dot ten"></span>
+                        <span class="aval">5</span>
+                    </label>
+                </div>
+            </div> -->
+
+            <div class="estrelas">
+                <span class="aval-title">De 0 a 5, como você classifica a qualidade do nosso atendimento?</span>
+                <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+
+                <label for="cm_star-1"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-1" name="fb" value="1"/>
+
+                <label for="cm_star-2"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-2" name="fb" value="2"/>
+
+                <label for="cm_star-3"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                
+                <label for="cm_star-4"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-4" name="fb" value="4"/>
+
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-5" name="fb" value="5"/>
+
+              </div>
+
+              
+            <div class="button">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
